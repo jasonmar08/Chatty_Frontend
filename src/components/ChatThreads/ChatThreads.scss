@@ -1,0 +1,11 @@
+.chat-threads-container {
+  text-align: left;
+
+  .thread-grid {
+    height: 75px;
+
+    &:hover {
+      background-color: rgb(37, 43, 45);
+    }
+  }
+}

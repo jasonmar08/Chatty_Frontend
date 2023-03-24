@@ -1,13 +1,43 @@
-import './Home.scss'
+import './Home.scss';
 
 export const Home = () => {
   return (
-    <div>
-      <h1>This is Home</h1>
-      <ul>
-        <li>This page will contain register or login form</li>
-        <li>Tabs for Register and Login will populate the appropriate form</li>
-      </ul>
+    <div className='home-container'>
+      <h1>Chatty</h1>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2>Register</h2>
+      <form
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <label>
+          First Name
+          <input placeholder='First Name' />
+        </label>
+        <label>
+          Last Name
+          <input placeholder='Last Name' />
+        </label>
+        <label>
+          Email
+          <input placeholder='Email' />
+        </label>
+        <label>
+          Password
+          <input placeholder='Password' />
+        </label>
+        <label>
+          Re-enter Password
+          <input placeholder='Re-enter Password' />
+        </label>
+        <button>Submit</button>
+      </form>
     </div>
-  )
-}
+  );
+};

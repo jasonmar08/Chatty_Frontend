@@ -1,16 +1,30 @@
-import './ChatMain.scss'
+import { ChatThreads } from '../../components/ChatThreads/ChatThreads';
+import { Messages } from '../../components/Messages/Messages';
+import { ChatDetails } from '../../components/ChatDetails/ChatDetails';
+import './ChatMain.scss';
+import { AccountBar } from '../../components/AccountBar/AccountBar';
+import { Contacts } from '../../components/Contacts/Contacts';
+import { ChatBar } from '../../components/ChatBar/ChatBar';
 
 export const ChatMain = () => {
   return (
-    <div>
-      <h1>This is the skeleton for the Chat Main page</h1>
-      <ul>
-        <li>different components will be populated on the screen in three columns</li>
-        <li>left column will be contacts</li>
-        <li>middle column will be all chat conversations</li>
-        <li>right column will be the selected thread with all messages populated</li>
-        <li>if no chat thread is seleted, the right column will be a boilerplate with app logo</li>
-      </ul>
+    <div className='main-screen-container'>
+      <div className='sidebar'></div>
+      <section className='left-pane'>
+        <AccountBar />
+        <Contacts />
+        <ChatThreads />
+      </section>
+      <section className='middle-pane'>
+        <ChatBar />
+        <Messages />
+      </section>
+      <section className='right-pane'>
+        <div className='right-bar'>
+          <h1>Contact detail</h1>
+        </div>
+        <ChatDetails />
+      </section>
     </div>
-  )
-}
+  );
+};

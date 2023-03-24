@@ -1,0 +1,43 @@
+.main-screen-container {
+  display: flex;
+  height: 100vh;
+
+  .sidebar {
+    background-color: rgb(23, 28, 29);
+    width: 120px;
+  }
+
+  .left-pane {
+    background-color: rgb(23, 28, 29);
+    border-left: 2px solid rgb(30, 32, 37);
+    border-right: 2px solid rgb(30, 32, 37);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+  }
+
+  .middle-pane {
+    background-color: rgb(23, 28, 29);
+    border-right: 2px solid rgb(30, 32, 37);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 35vw;
+  }
+
+  .right-pane {
+    background-color: rgb(23, 28, 29);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40vw;
+
+    .right-bar {
+      height: 100px;
+      border-bottom: 2px solid rgb(30, 32, 37);
+    }
+  }
+}

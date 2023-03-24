@@ -1,0 +1,24 @@
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: left;
+  }
+
+  input {
+    background-color: rgb(32, 37, 38);
+    height: 50px;
+    margin: 20px 15px;
+    border: 2px solid rgb(38, 42, 43);
+    padding: 2px 20px;
+    font-size: 15px;
+    border-radius: 16px;
+    margin: 30px 15px;
+    color: white;
+  }
+
+  ::placeholder {
+    color: rgb(99, 102, 103);
+  }
+}
